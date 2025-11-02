@@ -1,0 +1,7 @@
+swiftcourier\service\CourierService.class
+swiftcourier\SwiftCourierApplication.class
+swiftcourier\model\User.class
+swiftcourier\dao\UserDAO.class
+swiftcourier\model\Parcel.class
+swiftcourier\dao\ParcelDAO.class
+swiftcourier\config\DBConnection.class
