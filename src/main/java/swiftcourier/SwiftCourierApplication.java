@@ -13,9 +13,9 @@ public class SwiftCourierApplication {
         try {
             // register a user
             User u = new User();
-            u.setName("Test Sender");
-            u.setEmail("testsender@example.com");
-            u.setPhone("+919999999999");
+            u.setName("Rahul");
+            u.setEmail("rahul123@gmail.com");
+            u.setPhone("+911234567899");
             u = svc.registerUser(u);
             System.out.println("Registered user: " + u);
 
@@ -42,7 +42,7 @@ public class SwiftCourierApplication {
             System.out.println("Status updated: " + updated);
 
         } catch (SQLException e) {
-            System.err.println("Database error: " + e.getMessage());
+            System.out.println("Database error: " + e.getMessage());
             e.printStackTrace();
         }
     }

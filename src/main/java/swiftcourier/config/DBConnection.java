@@ -6,14 +6,14 @@ import java.sql.SQLException;
 
 
 public class DBConnection {
-    private static final String URL = "jdbc:mysql://localhost:3306/swift_courier_db";
-    private static final String USER = "root";
-    private static final String PASS = "password";
+    private static final String URL = "jdbc:postgresql://localhost:5432/swift_courier_db";
+    private static final String USER = "postgres";
+    private static final String PASS = "Root";
 
     static {
         try {
-            // If using MySQL: com.mysql.cj.jdbc.Driver
-            Class.forName("com.mysql.cj.jdbc.Driver");
+            // Using postgres
+            Class.forName("org.postgresql.Driver");
         } catch (ClassNotFoundException e) {
             System.err.println("JDBC Driver class not found. Add the JDBC driver to classpath.");
         }
